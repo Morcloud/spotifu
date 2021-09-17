@@ -4,6 +4,8 @@
 @import './link.css';
 @import './button-icon.css';
 @import './logo.css';
+@import './list.css';
+@import './menu.css';
 
 :root {
     --primary: #00B050;

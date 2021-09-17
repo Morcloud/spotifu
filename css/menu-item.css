@@ -1,0 +1,35 @@
+.menuItem {
+    font: var(--button);
+    font-weight: 500;
+}
+
+.menuItem a {
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    block-size: 2.5rem;
+    font: var(--button);
+    line-height: 2.5rem;
+}
+
+.menuItem a:hover{
+    text-decoration: none;
+}
+
+.menuItem [class^='icon-'] {
+    font-size: 1.5rem;
+}
+
+.menuItem.is-active a {
+    color: var(--white);
+    box-shadow: inset 4px 0 0 var(--primary);
+}
+
+.menuItem.is-active .icon-home::before {
+    content: '\e912';
+}
+.menuItem.is-active .icon-search::before {
+    content: '\e910';
+}
